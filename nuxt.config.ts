@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
@@ -12,5 +11,17 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/test-utils',
     '@primevue/nuxt-module',
-  ]
+  ],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/scss/_variables.scss" as *; @use "~/assets/scss/_mixins.scss" as *;'
+        }
+      }
+    }
+  },
+  css: [
+    '~/assets/scss/main.scss',
+  ],
 })
