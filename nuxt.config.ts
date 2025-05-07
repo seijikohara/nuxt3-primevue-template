@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/scripts',
     '@nuxt/test-utils',
+    '@pinia/nuxt',
     '@primevue/nuxt-module',
   ],
   vite: {
