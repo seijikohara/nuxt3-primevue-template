@@ -1,0 +1,33 @@
+@use "_variables" as *;
+@use 'primeicons/primeicons.css';
+
+// Reset and base styles
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--p-font-family);
+  background: var(--p-surface-0);
+  color: var(--p-text-color);
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: var(--p-primary-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--p-primary-color-hover);
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

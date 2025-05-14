@@ -1,3 +1,5 @@
+import Aura from '@primeuix/themes/aura';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
@@ -18,7 +20,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "~/assets/scss/_variables.scss" as *; @use "~/assets/scss/_mixins.scss" as *;',
+          additionalData: '@use "~/assets/scss/_variables.scss" as *;',
         },
       },
     },
@@ -26,4 +28,11 @@ export default defineNuxtConfig({
   css: [
     '~/assets/scss/main.scss',
   ],
+  primevue: {
+    options: {
+      theme: {
+        preset: Aura,
+      },
+    },
+  },
 });
