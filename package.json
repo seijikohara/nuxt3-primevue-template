@@ -23,7 +23,7 @@
     "@unhead/vue": "^2.0.8",
     "@vueuse/nuxt": "^13.2.0",
     "date-fns": "^4.1.0",
-    "nuxt": "^3.17.3",
+    "nuxt": "^3.19.2",
     "pinia": "^3.0.2",
     "primeicons": "^7.0.0",
     "primevue": "^4.3.4",
